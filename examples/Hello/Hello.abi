@@ -1,0 +1,26 @@
+[
+   {
+      "constant" : false,
+      "inputs" : [
+         {
+            "name" : "_message",
+            "type" : "string32"
+         }
+      ],
+      "name" : "setMessage",
+      "outputs" : [],
+      "type" : "function"
+   },
+   {
+      "constant" : false,
+      "inputs" : [],
+      "name" : "getMessage",
+      "outputs" : [
+         {
+            "name" : "message",
+            "type" : "string32"
+         }
+      ],
+      "type" : "function"
+   }
+]
