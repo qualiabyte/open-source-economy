@@ -10,7 +10,7 @@ contract Hello {
   }
 
   // Gets the message.
-  function getMessage() returns (string32 message) {
+  function getMessage() returns (string32 _message) {
     return message;
   }
 }
