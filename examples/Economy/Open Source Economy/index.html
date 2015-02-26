@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Open Source Economy</title>
+    <script>
+      var web3 = parent.web3;
+      var PublicAccount = contracts.PublicAccount.contract;
+
+      // Utilities
+      var log = function() {
+          for (var i in arguments) {
+              console.log("\nLOG: " + JSON.stringify(arguments[i], null, "  "));
+          }
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+  </head>
+  <body>
+    <h1>Open Source Economy</h1>
+    <h2>My Public Account</h2>
+    <span id="account-address"></span>
+    <script>
+      // Our account
+      var account = PublicAccount;
+
+      // Show address
+      $("#account-address").text(account.address);
+
+      // Set donation weights
+      account.setDonationWeight("0x5e0e4a8659b58c8f519ea354f7b92efe0facb393", 10);
+      account.setDonationWeight("0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 100);
+      account.setDonationWeight("0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", 85);
+      account.setDonationWeight("0xcccccccccccccccccccccccccccccccccccccccc", 50);
+    </script>
+  </body>
+</html>
