@@ -1,9 +1,13 @@
 {
-	"deploymentAddress": "",
+	"applicationUrlEth": "",
+	"applicationUrlHttp": "",
+	"deploymentAddresses": [],
 	"files": [
 		"contract.sol",
 		"index.html"
 	],
+	"packageBase64": "",
+	"packageHash": "",
 	"title": "Hello Mix",
 	"states": [
 		{

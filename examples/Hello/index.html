@@ -1,71 +1,16 @@
-<!doctype>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Hello Mix</title>
+    <title>Hello World</title>
+	<script>
+      var web3 = parent.web3;
+	  var theContract = contracts.Hello.contract;
+	</script>
   </head>
   <body>
-    <h1></h1>
-    <h2>Log</h2>
-    <pre id="log"></pre>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<h1 id="welcome"></h1>
     <script>
-      // Ethereum
-      var web3 = parent.web3;
-
-      // Utilities
-      var log = function(data) {
-        var $log = $('#log');
-        var entries = $log.text();
-        for (var i = 0; i < arguments.length; i++) {
-          var item = arguments[i];
-          var text = typeof item == "string"
-            ? item
-            : JSON.stringify(item, null, "  ");
-          entries += text + "\n";
-        }
-        $log.text(entries);
-      };
-      log("Logging ready!");
-
-      // Contracts
-      var ABI = [
-        {
-          "constant" : false,
-          "inputs" : [
-            {
-              "name" : "_message",
-              "type" : "string32"
-            }
-          ],
-          "name" : "setMessage",
-          "outputs" : [],
-          "type" : "function"
-        },
-        {
-          "constant" : false,
-          "inputs" : [],
-          "name" : "getMessage",
-          "outputs" : [
-            {
-              "name" : "",
-              "type" : "string32"
-            }
-          ],
-          "type" : "function"
-        }
-      ];
-      var Address = "0x78dfc5983baecf65f73e3de3a96cee24e6b7981e";
-      var Contract = web3.eth.contract(Address, ABI);
-      log("Contract: ", Contract);
-
-      // Set Message
-      var hello = Contract;
-      hello.setMessage("Hello, Mix!");
-
-      // Get Message
-      var result = hello.getMessage();
-      log("result: ", result);
+      theContract.setMessage("Hello, Mix!");
+      document.getElementById("welcome").innerHTML = theContract.getMessage();
     </script>
   </body>
 </html>

@@ -12,7 +12,7 @@
       "type" : "function"
    },
    {
-      "constant" : false,
+      "constant" : true,
       "inputs" : [],
       "name" : "getMessage",
       "outputs" : [

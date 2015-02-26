@@ -2,7 +2,9 @@ contract Hello {
   string32 message;
 
   // Constructor
-  function Hello() {}
+  function Hello() {
+    message = "Hello World";
+  }
 
   // Sets the message.
   function setMessage(string32 _message) {
@@ -10,7 +12,7 @@ contract Hello {
   }
 
   // Gets the message.
-  function getMessage() returns (string32) {
+  function getMessage() constant returns (string32) {
     return message;
   }
 }
