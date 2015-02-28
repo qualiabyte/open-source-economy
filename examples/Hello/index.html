@@ -1,13 +1,13 @@
 <html>
   <head>
     <title>Hello World</title>
-	<script>
+    <script>
       var web3 = parent.web3;
-	  var theContract = contracts.Hello.contract;
-	</script>
+      var theContract = contracts.Hello.contract;
+    </script>
   </head>
   <body>
-	<h1 id="welcome"></h1>
+    <h1 id="welcome"></h1>
     <script>
       theContract.setMessage("Hello, Mix!");
       document.getElementById("welcome").innerHTML = theContract.getMessage();
