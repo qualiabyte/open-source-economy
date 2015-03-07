@@ -85,7 +85,10 @@ with a "not-for-loss" license and incentives for transparent and consensual part
    A type of contract that allows sharing incoming funds with recipients  
    of one's choice in accordance with one's values.
 
-### Future Infrastructure
+### External Infrastructure
+
+Probably outside of our scope for this project, but these systems are  
+likely to arise in the future, and would be useful for an open economy:
 
 1. **Open Identities and Reputation**  
    Allows users and organizations to build a solid history  
@@ -102,7 +105,8 @@ with a "not-for-loss" license and incentives for transparent and consensual part
 
 Gain access to unlimited use of open products and content  
 by agreeing to share a small amount (about 1%) of any profits  
-over a subscription period with parts of the open ecosystem you value.
+over with parts of the open ecosystem you value, while building  
+reputation, influence, and goodwill as member in good standing.
 
 + **Open products and designs**  
    Software, hardware, machinery, architectures
@@ -113,11 +117,9 @@ over a subscription period with parts of the open ecosystem you value.
 + **Reduce economic risk**  
   Failed ventures incur no cost from their subscription.  
   This helps protect Individuals, DAOs, and Corporations.
-+ **A Single Subscription**  
++ **Universal Membership**  
   A voluntary agreement under the not-for-loss license  
   to join the open ecosystem along with its benefits and dues.  
-+ **Subscription Period**  
-  Defaults to one year, other options possible.
 
 ### Developers
 
@@ -153,7 +155,7 @@ under a low-risk, "not-for-loss" license.
 + **Continuous Growth**  
   Transition seamlessly from experimental hobbyist  
   to paid professional with "not-for-loss" licensing.
-+ **Give Back to Your Supporters**  
++ **Reinvest in Mentors**  
   Repay the mentors and others who helped you  
   along your path to success, as soon as you're ready.
 
@@ -168,10 +170,10 @@ under a low-risk, "not-for-loss" license.
 + **Build Your Reputation**  
   Establish your professional reputation  
   by showcasing successful projects.
-+ **Show Your Expertise**  
++ **Show Your Value and Expertise**  
   Advertise your interests and expertise  
   by sharing your personal tools of choice.
-+ **Give Back to Your Community**  
++ **Reinvest in Your Community**  
   Build goodwill in your community  
   by giving back to those supporting your profession.
 
