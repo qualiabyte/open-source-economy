@@ -80,16 +80,16 @@ contract DonationService {
   function donate(address donationWeights) {
     var weights = ValueDistribution(donationWeights);
     var keyCount = weights.keyCount();
-    var valueTotal = weights.valueTotal();
+    var totalWeight = weights.valueTotal();
     if (valueTotal <= 0)
       return;
 
-    for (var i = 1; i < keyCount; i++) {
+    for (var i = 1; i <= keyCount; i++) {
       var recipient = address(weights.keys(i));
       var weight = weights.values(hash(recipient));
-      var value = weight / valueTotal;
-      if (value > 0)
-        recipient.send(uint160(value));
+      var amount = msg.value * weight / totalWeight;
+      if (amount > 0)
+        recipient.send(uint160(amount));
     }
   }
 }
